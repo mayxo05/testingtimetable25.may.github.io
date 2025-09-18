@@ -1,1 +1,45 @@
-file:///Users/maevekerrin/Downloads/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TU Dublin Timetable</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #004080;
+      color: white;
+      cursor: pointer;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.5em;
+      margin: 0;
+      padding: 20px;
+    }
+    p {
+      font-size: 1em;
+      margin: 0;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body onclick="openTimetable()">
+  <div>
+    <h1>🕑 TU Dublin Timetable</h1>
+    <p>Click anywhere to open your timetable in a new tab</p>
+  </div>
+
+  <script>
+    function openTimetable() {
+      window.open("https://timetables.tudublin.ie/timetables?date=2025-09-01&view=agenda", "_blank");
+    }
+  </script>
+</body>
+</html>
